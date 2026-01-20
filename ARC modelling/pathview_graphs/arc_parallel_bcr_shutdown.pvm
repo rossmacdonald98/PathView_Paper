@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-01-20T13:00:41.803Z",
-    "modified": "2026-01-20T13:00:41.803Z",
+    "created": "2026-01-20T13:08:30.718Z",
+    "modified": "2026-01-20T13:08:30.718Z",
     "name": "arc_parallel_bcr_shutdown"
   },
   "graph": {
@@ -1458,7 +1458,9 @@
           }
         ],
         "outputs": [],
-        "params": {},
+        "params": {
+          "labels": "[\"BCR_1\", \"BCR_2\"]"
+        },
         "color": "#FFB74D"
       },
       {
@@ -1497,14 +1499,14 @@
         ],
         "outputs": [],
         "params": {
-          "labels": "[\"c_T_in\",\"c_T_out\"]"
+          "labels": "[\"c_T_in\",\"c_T_out_BCR_1\",\"c_T_out_BCR_2\"]"
         },
         "color": "#FFB74D"
       },
       {
         "id": "a31ebbf7-f625-4893-9698-d8032ff292bd",
         "type": "Scope",
-        "name": "y_T2 in / out",
+        "name": "y_T2 out",
         "position": {
           "x": 1545,
           "y": 405
@@ -1530,7 +1532,7 @@
         "outputs": [],
         "params": {
           "_rotation": 0,
-          "labels": "[\"y_T2_in\",\"y_T2_out\"]"
+          "labels": "[\"y_T2_out_BCR_1\",\"y_T2_out_BCR_2\"]"
         },
         "color": "#FFB74D"
       },
