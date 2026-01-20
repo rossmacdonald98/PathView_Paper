@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-01-20T11:25:12.762Z",
-    "modified": "2026-01-20T11:25:12.762Z",
+    "created": "2026-01-20T12:56:17.704Z",
+    "modified": "2026-01-20T12:56:17.704Z",
     "name": "arc_single_bcr"
   },
   "graph": {
@@ -629,8 +629,8 @@
         "type": "Scope",
         "name": "Outer Fuel Cycle",
         "position": {
-          "x": 1770,
-          "y": 795
+          "x": 1755,
+          "y": 810
         },
         "inputs": [
           {
@@ -1908,8 +1908,8 @@
       {
         "id": "d0334f13-9e04-47c6-9b35-549a44538162",
         "position": {
-          "x": 890,
-          "y": 340
+          "x": 945,
+          "y": 360
         },
         "content": "Blanket T out (x / tau) is in [kg / s]\n\nMultiply by 1000 / T molar mass to convert to [mol / s]",
         "width": 215,

@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-01-16T15:14:37.544Z",
-    "modified": "2026-01-16T15:14:37.544Z",
+    "created": "2026-01-20T12:59:31.832Z",
+    "modified": "2026-01-20T12:59:31.832Z",
     "name": "arc_series_bcr"
   },
   "graph": {
@@ -1153,7 +1153,7 @@
       {
         "id": "60ecf0fe-99a9-4a6a-9178-5fa87ac59a76",
         "type": "GLC",
-        "name": "GLC",
+        "name": "BCR 1",
         "position": {
           "x": 1335,
           "y": 495
@@ -1564,7 +1564,7 @@
       {
         "id": "df2e8374-55e0-40b3-89b9-ef391919326d",
         "type": "GLC",
-        "name": "GLC",
+        "name": "BCR 2",
         "position": {
           "x": 1500,
           "y": 495
@@ -1681,7 +1681,7 @@
       {
         "id": "40c83eec-a0b4-48ba-8cc5-8041fac788d7",
         "type": "GLC",
-        "name": "GLC",
+        "name": "BCR 3",
         "position": {
           "x": 1665,
           "y": 495
