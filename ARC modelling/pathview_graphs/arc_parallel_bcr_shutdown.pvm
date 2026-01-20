@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-01-20T13:08:30.718Z",
-    "modified": "2026-01-20T13:08:30.718Z",
+    "created": "2026-01-20T13:18:33.807Z",
+    "modified": "2026-01-20T13:18:33.807Z",
     "name": "arc_parallel_bcr_shutdown"
   },
   "graph": {
@@ -1162,7 +1162,7 @@
       {
         "id": "60ecf0fe-99a9-4a6a-9178-5fa87ac59a76",
         "type": "GLC",
-        "name": "GLC 1",
+        "name": "BCR 1",
         "position": {
           "x": 1335,
           "y": 495
@@ -1539,7 +1539,7 @@
       {
         "id": "3eecc402-9a7c-4142-96bb-ff29c587609e",
         "type": "GLC",
-        "name": "GLC 2",
+        "name": "BCR 2",
         "position": {
           "x": 1350,
           "y": 675
