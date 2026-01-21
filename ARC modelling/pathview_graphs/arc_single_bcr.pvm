@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-01-20T12:56:17.704Z",
-    "modified": "2026-01-20T12:56:17.704Z",
+    "created": "2026-01-21T13:32:16.659Z",
+    "modified": "2026-01-21T13:32:16.659Z",
     "name": "arc_single_bcr"
   },
   "graph": {
@@ -691,7 +691,9 @@
           }
         ],
         "outputs": [],
-        "params": {},
+        "params": {
+          "labels": "['Fusion rate']"
+        },
         "color": "#FFB74D"
       },
       {
@@ -795,7 +797,8 @@
           }
         ],
         "params": {
-          "_rotation": 1
+          "_rotation": 1,
+          "initial_value": "startup_inventory"
         }
       },
       {

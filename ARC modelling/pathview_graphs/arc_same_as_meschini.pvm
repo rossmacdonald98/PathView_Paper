@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-01-16T09:49:05.866Z",
-    "modified": "2026-01-16T09:49:05.866Z",
+    "created": "2026-01-21T13:13:47.662Z",
+    "modified": "2026-01-21T13:13:47.662Z",
     "name": "arc_same_as_meschini"
   },
   "graph": {
@@ -302,8 +302,8 @@
         "type": "Process",
         "name": "T separation membrane",
         "position": {
-          "x": 630,
-          "y": 645
+          "x": 610,
+          "y": 400
         },
         "inputs": [
           {
@@ -335,7 +335,7 @@
         ],
         "params": {
           "tau": "tau_membrane",
-          "_rotation": 1
+          "_rotation": 2
         }
       },
       {
@@ -425,8 +425,8 @@
         "type": "Amplifier",
         "name": "Injection_rate",
         "position": {
-          "x": 450,
-          "y": 630
+          "x": 430,
+          "y": 385
         },
         "inputs": [
           {
@@ -459,8 +459,8 @@
         "type": "Amplifier",
         "name": "Pumping_rate",
         "position": {
-          "x": 195,
-          "y": 630
+          "x": 175,
+          "y": 385
         },
         "inputs": [
           {
@@ -493,8 +493,8 @@
         "type": "Process",
         "name": "Pump",
         "position": {
-          "x": 180,
-          "y": 735
+          "x": 160,
+          "y": 490
         },
         "inputs": [
           {
@@ -535,8 +535,8 @@
         "type": "Process",
         "name": "fuel cleanup",
         "position": {
-          "x": 315,
-          "y": 900
+          "x": 295,
+          "y": 655
         },
         "inputs": [
           {
@@ -577,8 +577,8 @@
         "type": "Process",
         "name": "ISS",
         "position": {
-          "x": 405,
-          "y": 975
+          "x": 385,
+          "y": 730
         },
         "inputs": [
           {
@@ -627,8 +627,8 @@
         "type": "Process",
         "name": "detritiation",
         "position": {
-          "x": 405,
-          "y": 1095
+          "x": 385,
+          "y": 850
         },
         "inputs": [
           {
@@ -669,8 +669,8 @@
         "type": "Scope",
         "name": "Outer Fuel Cycle",
         "position": {
-          "x": 1275,
-          "y": 705
+          "x": 1300,
+          "y": 740
         },
         "inputs": [
           {
@@ -715,7 +715,9 @@
           }
         ],
         "outputs": [],
-        "params": {},
+        "params": {
+          "labels": "['Divertor','FW','Blanket','TES','HX']"
+        },
         "color": "#FFB74D"
       },
       {
@@ -737,7 +739,9 @@
           }
         ],
         "outputs": [],
-        "params": {},
+        "params": {
+          "labels": "['Fusion rate']"
+        },
         "color": "#FFB74D"
       },
       {
@@ -745,8 +749,8 @@
         "type": "Scope",
         "name": "Inner Fuel Cycle",
         "position": {
-          "x": 570,
-          "y": 1170
+          "x": 550,
+          "y": 925
         },
         "inputs": [
           {
@@ -783,7 +787,9 @@
           }
         ],
         "outputs": [],
-        "params": {},
+        "params": {
+          "labels": "['Storage','Pump','ISS','Cleanup']"
+        },
         "color": "#FFB74D"
       },
       {
@@ -791,8 +797,8 @@
         "type": "Integrator",
         "name": "Storage",
         "position": {
-          "x": 495,
-          "y": 765
+          "x": 475,
+          "y": 520
         },
         "inputs": [
           {
@@ -895,8 +901,8 @@
         "type": "Splitter",
         "name": "Detrit / Storage",
         "position": {
-          "x": 600,
-          "y": 990
+          "x": 580,
+          "y": 745
         },
         "inputs": [
           {
@@ -936,8 +942,8 @@
         "type": "Splitter",
         "name": "Storage / Cleanup",
         "position": {
-          "x": 270,
-          "y": 795
+          "x": 250,
+          "y": 550
         },
         "inputs": [
           {

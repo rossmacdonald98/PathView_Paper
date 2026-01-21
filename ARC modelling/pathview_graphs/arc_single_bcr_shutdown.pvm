@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-01-20T09:32:11.748Z",
-    "modified": "2026-01-20T09:32:11.748Z",
+    "created": "2026-01-21T13:39:44.330Z",
+    "modified": "2026-01-21T13:39:44.330Z",
     "name": "arc_single_bcr_shutdown"
   },
   "graph": {
@@ -691,7 +691,9 @@
           }
         ],
         "outputs": [],
-        "params": {},
+        "params": {
+          "labels": "['Fusion rate']"
+        },
         "color": "#FFB74D"
       },
       {
@@ -2071,8 +2073,8 @@
       {
         "id": "de2c1f39-9782-417c-9def-197b78111188",
         "position": {
-          "x": 1950,
-          "y": 345
+          "x": 1940,
+          "y": 300
         },
         "content": "Shutdown & Resume events for switching BCR outputs to 0 during downtime.",
         "width": 200,

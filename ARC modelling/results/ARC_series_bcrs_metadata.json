@@ -1,0 +1,76 @@
+{
+  "scope_0_y_T2_in_y_T2_out_1_y_T2_out_2_y_T2_out_3": {
+    "labels": [
+      "y_T2_in",
+      "y_T2_out_1",
+      "y_T2_out_2",
+      "y_T2_out_3"
+    ],
+    "data_shape": [
+      4,
+      9622
+    ],
+    "time_length": 9622
+  },
+  "scope_1_Fusion_rate": {
+    "labels": [
+      "Fusion rate"
+    ],
+    "data_shape": [
+      1,
+      9622
+    ],
+    "time_length": 9622
+  },
+  "scope_2_Storage_Pump_ISS_Cleanup": {
+    "labels": [
+      "Storage",
+      "Pump",
+      "ISS",
+      "Cleanup"
+    ],
+    "data_shape": [
+      4,
+      9622
+    ],
+    "time_length": 9622
+  },
+  "scope_3_Divertor_FW_Blanket_HX": {
+    "labels": [
+      "Divertor",
+      "FW",
+      "Blanket",
+      "HX"
+    ],
+    "data_shape": [
+      4,
+      9622
+    ],
+    "time_length": 9622
+  },
+  "scope_4_BCR_1_BCR_2_BCR_3": {
+    "labels": [
+      "BCR_1",
+      "BCR_2",
+      "BCR_3"
+    ],
+    "data_shape": [
+      3,
+      9622
+    ],
+    "time_length": 9622
+  },
+  "scope_5_c_T_in_c_T_out_1_c_T_out_2_c_T_out_3": {
+    "labels": [
+      "c_T_in",
+      "c_T_out_1",
+      "c_T_out_2",
+      "c_T_out_3"
+    ],
+    "data_shape": [
+      4,
+      9622
+    ],
+    "time_length": 9622
+  }
+}
