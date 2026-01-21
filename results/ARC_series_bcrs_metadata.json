@@ -9,9 +9,9 @@
     ],
     "data_shape": [
       5,
-      982
+      35021
     ],
-    "time_length": 982
+    "time_length": 35021
   },
   "scope_1_Fusion_rate": {
     "labels": [
@@ -19,9 +19,9 @@
     ],
     "data_shape": [
       1,
-      982
+      35021
     ],
-    "time_length": 982
+    "time_length": 35021
   },
   "scope_2_Storage_Pump_ISS_Cleanup": {
     "labels": [
@@ -32,8 +32,8 @@
     ],
     "data_shape": [
       4,
-      982
+      35021
     ],
-    "time_length": 982
+    "time_length": 35021
   }
 }

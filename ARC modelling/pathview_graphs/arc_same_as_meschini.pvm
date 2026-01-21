@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-01-21T13:13:47.662Z",
-    "modified": "2026-01-21T13:13:47.662Z",
+    "created": "2026-01-21T20:06:19.169Z",
+    "modified": "2026-01-21T20:06:19.169Z",
     "name": "arc_same_as_meschini"
   },
   "graph": {
@@ -793,62 +793,6 @@
         "color": "#FFB74D"
       },
       {
-        "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "type": "Integrator",
-        "name": "Storage",
-        "position": {
-          "x": 475,
-          "y": 520
-        },
-        "inputs": [
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-0",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 0",
-            "direction": "input",
-            "index": 0,
-            "color": "#969696"
-          },
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-1",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 1",
-            "direction": "input",
-            "index": 1,
-            "color": "#969696"
-          },
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-2",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 2",
-            "direction": "input",
-            "index": 2,
-            "color": "#969696"
-          },
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-3",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 3",
-            "direction": "input",
-            "index": 3,
-            "color": "#969696"
-          }
-        ],
-        "outputs": [
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-output-0",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "out 0",
-            "direction": "output",
-            "index": 0,
-            "color": "#969696"
-          }
-        ],
-        "params": {
-          "_rotation": 1
-        }
-      },
-      {
         "id": "9c400091-2f2c-4365-8c1d-2e8d581dc6ee",
         "type": "Splitter",
         "name": "HX Splitter",
@@ -893,7 +837,8 @@
           }
         ],
         "params": {
-          "_rotation": 3
+          "_rotation": 3,
+          "fractions": "[1/3, 1/3, 1/3]"
         }
       },
       {
@@ -983,8 +928,8 @@
         "type": "Splitter",
         "name": "TES eff",
         "position": {
-          "x": 915,
-          "y": 540
+          "x": 920,
+          "y": 560
         },
         "inputs": [
           {
@@ -1017,6 +962,95 @@
         "params": {
           "_rotation": 1,
           "fractions": "[tes_efficiency, 1 - tes_efficiency]"
+        }
+      },
+      {
+        "id": "93ffd864-1c09-482d-a9fa-5d585ba846a5",
+        "type": "Integrator",
+        "name": "Storage",
+        "position": {
+          "x": 470,
+          "y": 650
+        },
+        "inputs": [
+          {
+            "id": "93ffd864-1c09-482d-a9fa-5d585ba846a5-input-0",
+            "nodeId": "93ffd864-1c09-482d-a9fa-5d585ba846a5",
+            "name": "in 0",
+            "direction": "input",
+            "index": 0,
+            "color": "#969696"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "93ffd864-1c09-482d-a9fa-5d585ba846a5-output-0",
+            "nodeId": "93ffd864-1c09-482d-a9fa-5d585ba846a5",
+            "name": "out 0",
+            "direction": "output",
+            "index": 0,
+            "color": "#969696"
+          }
+        ],
+        "params": {
+          "initial_value": "startup_inventory",
+          "_rotation": 1
+        }
+      },
+      {
+        "id": "62c3cbad-a42c-4f4e-8acb-72da42cd12be",
+        "type": "Adder",
+        "name": "Adder",
+        "position": {
+          "x": 470,
+          "y": 580
+        },
+        "inputs": [
+          {
+            "id": "62c3cbad-a42c-4f4e-8acb-72da42cd12be-input-0",
+            "nodeId": "62c3cbad-a42c-4f4e-8acb-72da42cd12be",
+            "name": "in 0",
+            "direction": "input",
+            "index": 0,
+            "color": "#969696"
+          },
+          {
+            "id": "62c3cbad-a42c-4f4e-8acb-72da42cd12be-input-1",
+            "nodeId": "62c3cbad-a42c-4f4e-8acb-72da42cd12be",
+            "name": "in 1",
+            "direction": "input",
+            "index": 1,
+            "color": "#969696"
+          },
+          {
+            "id": "62c3cbad-a42c-4f4e-8acb-72da42cd12be-input-2",
+            "nodeId": "62c3cbad-a42c-4f4e-8acb-72da42cd12be",
+            "name": "in 2",
+            "direction": "input",
+            "index": 2,
+            "color": "#969696"
+          },
+          {
+            "id": "62c3cbad-a42c-4f4e-8acb-72da42cd12be-input-3",
+            "nodeId": "62c3cbad-a42c-4f4e-8acb-72da42cd12be",
+            "name": "in 3",
+            "direction": "input",
+            "index": 3,
+            "color": "#969696"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "62c3cbad-a42c-4f4e-8acb-72da42cd12be-output-0",
+            "nodeId": "62c3cbad-a42c-4f4e-8acb-72da42cd12be",
+            "name": "out",
+            "direction": "output",
+            "index": 0,
+            "color": "#969696"
+          }
+        ],
+        "params": {
+          "_rotation": 1
         }
       }
     ],
@@ -1183,27 +1217,6 @@
         "targetPortIndex": 3
       },
       {
-        "id": "e6101df2-8ef8-4615-ac7d-d7636bebd1a4",
-        "sourceNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "sourcePortIndex": 0,
-        "targetNodeId": "0711a18c-e933-4424-b0d2-bde595347be1",
-        "targetPortIndex": 0
-      },
-      {
-        "id": "00eaee40-7d98-4edb-a79e-b1881784ac7e",
-        "sourceNodeId": "79cd7601-ca9b-4d28-89c6-1fc66b04c2c0",
-        "sourcePortIndex": 0,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "targetPortIndex": 1
-      },
-      {
-        "id": "3568be53-7f47-48f2-b467-4faa1c575480",
-        "sourceNodeId": "da6f76ac-3620-4aa1-9a4b-b9849ab325d1",
-        "sourcePortIndex": 1,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "targetPortIndex": 2
-      },
-      {
         "id": "1a9dcf6e-a286-42d9-9070-ac754f0fb774",
         "sourceNodeId": "c39c350c-e3ce-4bbf-bb2a-cdc600481e25",
         "sourcePortIndex": 1,
@@ -1246,24 +1259,10 @@
         "targetPortIndex": 0
       },
       {
-        "id": "f051ab2d-858c-40ec-a1e7-c92bbf65c3cf",
-        "sourceNodeId": "5f6191b1-306c-40a8-be1b-e2117a906fb9",
-        "sourcePortIndex": 0,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "targetPortIndex": 3
-      },
-      {
         "id": "1a65c4ea-5d1c-40f4-88a1-509d1bcccfba",
         "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
         "sourcePortIndex": 1,
         "targetNodeId": "7953ec42-7bdc-4f66-a84a-191cca538255",
-        "targetPortIndex": 0
-      },
-      {
-        "id": "334fcddb-8bad-401f-a5ef-67c55b7fa709",
-        "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
-        "sourcePortIndex": 0,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
         "targetPortIndex": 0
       },
       {
@@ -1293,6 +1292,48 @@
         "sourcePortIndex": 0,
         "targetNodeId": "da6f76ac-3620-4aa1-9a4b-b9849ab325d1",
         "targetPortIndex": 0
+      },
+      {
+        "id": "2631fa00-5f1f-44ca-936e-b9d369ae467d",
+        "sourceNodeId": "93ffd864-1c09-482d-a9fa-5d585ba846a5",
+        "sourcePortIndex": 0,
+        "targetNodeId": "0711a18c-e933-4424-b0d2-bde595347be1",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "6850e5e9-928c-4651-a3fa-a993a020720e",
+        "sourceNodeId": "62c3cbad-a42c-4f4e-8acb-72da42cd12be",
+        "sourcePortIndex": 0,
+        "targetNodeId": "93ffd864-1c09-482d-a9fa-5d585ba846a5",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "18b9aa52-1059-4d0a-8549-6cd40ad2d65f",
+        "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
+        "sourcePortIndex": 0,
+        "targetNodeId": "62c3cbad-a42c-4f4e-8acb-72da42cd12be",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "836da0c0-545e-4cf7-b5da-8d6f07561a19",
+        "sourceNodeId": "79cd7601-ca9b-4d28-89c6-1fc66b04c2c0",
+        "sourcePortIndex": 0,
+        "targetNodeId": "62c3cbad-a42c-4f4e-8acb-72da42cd12be",
+        "targetPortIndex": 1
+      },
+      {
+        "id": "da0cdf3e-f299-4b40-856b-bcd9f83c352a",
+        "sourceNodeId": "da6f76ac-3620-4aa1-9a4b-b9849ab325d1",
+        "sourcePortIndex": 1,
+        "targetNodeId": "62c3cbad-a42c-4f4e-8acb-72da42cd12be",
+        "targetPortIndex": 2
+      },
+      {
+        "id": "7a303f88-d82c-48dc-93ec-0142dd75550b",
+        "sourceNodeId": "5f6191b1-306c-40a8-be1b-e2117a906fb9",
+        "sourcePortIndex": 0,
+        "targetNodeId": "62c3cbad-a42c-4f4e-8acb-72da42cd12be",
+        "targetPortIndex": 3
       }
     ],
     "annotations": []
@@ -1302,7 +1343,7 @@
     "code": "fusion_power = 525  # MWth\ntritium_burn_rate = 9.3e-7  # kg/s\npulse_duration = 1800  # s\ntime_between_pulses = 60  # s\nTBE = 0.02\nnon_rad_loss_fraction = 1e-4\nAF = 0.7\ntritium_processing_time = 4 * 3600  # s\ndir_frac = 0.3\n\ntau_blanket = 1.25 * 3600  # s\ntau_fw = 1000  # s\ntau_divertor = 1000  # s\ntau_tes = 24 * 3600  # s\ntau_hx = 1000  # s\ntau_vacuum_pump = 600  # s\ntau_fuel_cleanup = 0.3 * 3600  # s\ntau_iss = 3 * 3600  # s\ntau_detritiation = 1 * 3600  # s\ntau_membrane = 100  # s\n\nf_p3 = 1e-4\nf_p4 = 1e-4\n\nTBR = 1.05\ntes_efficiency = 0.95\nstartup_inventory = 1.14"
   },
   "simulationSettings": {
-    "duration": "1 * 24 * 3600",
+    "duration": "100 * 24 * 3600",
     "dt": "0.02",
     "solver": "RKBS32",
     "adaptive": true,
