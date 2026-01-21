@@ -8,6 +8,7 @@ dependencies:
   - ipykernel
   - scipy
   - festim
+  - pathsim
   - pip
   - pip:
     - git+https://github.com/festim-dev/PathView@glc
