@@ -11,5 +11,5 @@ dependencies:
   - pathsim
   - pip
   - pip:
-    - git+https://github.com/festim-dev/PathView@glc
+    - pathsim-chem
     - morethemes
