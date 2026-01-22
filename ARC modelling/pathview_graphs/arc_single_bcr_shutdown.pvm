@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-01-21T13:39:44.330Z",
-    "modified": "2026-01-21T13:39:44.330Z",
+    "created": "2026-01-22T09:41:21.648Z",
+    "modified": "2026-01-22T09:41:21.648Z",
     "name": "arc_single_bcr_shutdown"
   },
   "graph": {
@@ -757,8 +757,8 @@
         "type": "Integrator",
         "name": "Storage",
         "position": {
-          "x": 495,
-          "y": 765
+          "x": 490,
+          "y": 880
         },
         "inputs": [
           {
@@ -767,30 +767,6 @@
             "name": "in 0",
             "direction": "input",
             "index": 0,
-            "color": "#969696"
-          },
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-1",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 1",
-            "direction": "input",
-            "index": 1,
-            "color": "#969696"
-          },
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-2",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 2",
-            "direction": "input",
-            "index": 2,
-            "color": "#969696"
-          },
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-3",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 3",
-            "direction": "input",
-            "index": 3,
             "color": "#969696"
           }
         ],
@@ -1605,18 +1581,51 @@
         "color": "#BA68C8"
       },
       {
-        "id": "14c10db1-04e2-40aa-ad2c-86ae834c5085",
-        "type": "Constant",
-        "name": "0",
+        "id": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc",
+        "type": "Adder",
+        "name": "Adder",
         "position": {
-          "x": 1560,
-          "y": 645
+          "x": 490,
+          "y": 790
         },
-        "inputs": [],
+        "inputs": [
+          {
+            "id": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc-input-0",
+            "nodeId": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc",
+            "name": "in 0",
+            "direction": "input",
+            "index": 0,
+            "color": "#969696"
+          },
+          {
+            "id": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc-input-1",
+            "nodeId": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc",
+            "name": "in 1",
+            "direction": "input",
+            "index": 1,
+            "color": "#969696"
+          },
+          {
+            "id": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc-input-2",
+            "nodeId": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc",
+            "name": "in 2",
+            "direction": "input",
+            "index": 2,
+            "color": "#969696"
+          },
+          {
+            "id": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc-input-3",
+            "nodeId": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc",
+            "name": "in 3",
+            "direction": "input",
+            "index": 3,
+            "color": "#969696"
+          }
+        ],
         "outputs": [
           {
-            "id": "14c10db1-04e2-40aa-ad2c-86ae834c5085-output-0",
-            "nodeId": "14c10db1-04e2-40aa-ad2c-86ae834c5085",
+            "id": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc-output-0",
+            "nodeId": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc",
             "name": "out",
             "direction": "output",
             "index": 0,
@@ -1624,9 +1633,8 @@
           }
         ],
         "params": {
-          "value": "0"
-        },
-        "color": "#F06292"
+          "_rotation": 1
+        }
       }
     ],
     "connections": [
@@ -1778,20 +1786,6 @@
         "targetPortIndex": 0
       },
       {
-        "id": "00eaee40-7d98-4edb-a79e-b1881784ac7e",
-        "sourceNodeId": "79cd7601-ca9b-4d28-89c6-1fc66b04c2c0",
-        "sourcePortIndex": 0,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "targetPortIndex": 1
-      },
-      {
-        "id": "3568be53-7f47-48f2-b467-4faa1c575480",
-        "sourceNodeId": "da6f76ac-3620-4aa1-9a4b-b9849ab325d1",
-        "sourcePortIndex": 1,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "targetPortIndex": 2
-      },
-      {
         "id": "bdec0514-bc5d-423b-8ee5-b0f63636084e",
         "sourceNodeId": "85e83104-9336-4297-b2af-e6e7fa4e9369",
         "sourcePortIndex": 1,
@@ -1806,24 +1800,10 @@
         "targetPortIndex": 0
       },
       {
-        "id": "f051ab2d-858c-40ec-a1e7-c92bbf65c3cf",
-        "sourceNodeId": "5f6191b1-306c-40a8-be1b-e2117a906fb9",
-        "sourcePortIndex": 0,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "targetPortIndex": 3
-      },
-      {
         "id": "1a65c4ea-5d1c-40f4-88a1-509d1bcccfba",
         "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
         "sourcePortIndex": 1,
         "targetNodeId": "7953ec42-7bdc-4f66-a84a-191cca538255",
-        "targetPortIndex": 0
-      },
-      {
-        "id": "334fcddb-8bad-401f-a5ef-67c55b7fa709",
-        "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
-        "sourcePortIndex": 0,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
         "targetPortIndex": 0
       },
       {
@@ -2056,14 +2036,49 @@
         "sourcePortIndex": 0,
         "targetNodeId": "0711a18c-e933-4424-b0d2-bde595347be1",
         "targetPortIndex": 4
+      },
+      {
+        "id": "f9bb317a-6149-4333-b55f-fc3837e38fee",
+        "sourceNodeId": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc",
+        "sourcePortIndex": 0,
+        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "ef655c88-2578-4c1a-8ef2-b476d60e8a88",
+        "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
+        "sourcePortIndex": 0,
+        "targetNodeId": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "b34bc818-5ef0-4fda-8f4d-78d4c05493d6",
+        "sourceNodeId": "79cd7601-ca9b-4d28-89c6-1fc66b04c2c0",
+        "sourcePortIndex": 0,
+        "targetNodeId": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc",
+        "targetPortIndex": 1
+      },
+      {
+        "id": "269b7715-573b-4e24-8b96-17848ab85ba6",
+        "sourceNodeId": "da6f76ac-3620-4aa1-9a4b-b9849ab325d1",
+        "sourcePortIndex": 1,
+        "targetNodeId": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc",
+        "targetPortIndex": 2
+      },
+      {
+        "id": "e6953a40-7c9d-4fd3-b861-da471dbd180a",
+        "sourceNodeId": "5f6191b1-306c-40a8-be1b-e2117a906fb9",
+        "sourcePortIndex": 0,
+        "targetNodeId": "91d41865-4eba-4d2b-ba0f-4db26fdfe9cc",
+        "targetPortIndex": 3
       }
     ],
     "annotations": [
       {
         "id": "d0334f13-9e04-47c6-9b35-549a44538162",
         "position": {
-          "x": 945,
-          "y": 345
+          "x": 890,
+          "y": 320
         },
         "content": "Blanket T out (x / tau) is in [kg / s]\n\nMultiply by 1000 / T molar mass to convert to [mol / s]",
         "width": 215,
@@ -2093,7 +2108,7 @@
         "y": 420
       },
       "params": {
-        "times_evt": "[1 * 24 * 3600]",
+        "times_evt": "[2 * 24 * 3600]",
         "func_act": "act_sd"
       },
       "color": "#4DD0E1"
@@ -2107,7 +2122,7 @@
         "y": 420
       },
       "params": {
-        "times_evt": "[2 * 24 * 3600]",
+        "times_evt": "[3 * 24 * 3600]",
         "func_act": "act_su"
       },
       "color": "#4DD0E1"

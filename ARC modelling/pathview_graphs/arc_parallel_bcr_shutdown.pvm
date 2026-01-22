@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-01-20T13:18:33.807Z",
-    "modified": "2026-01-20T13:18:33.807Z",
+    "created": "2026-01-22T09:48:55.077Z",
+    "modified": "2026-01-22T09:48:55.077Z",
     "name": "arc_parallel_bcr_shutdown"
   },
   "graph": {
@@ -691,7 +691,9 @@
           }
         ],
         "outputs": [],
-        "params": {},
+        "params": {
+          "labels": "['Fusion rate'"
+        },
         "color": "#FFB74D"
       },
       {
@@ -755,8 +757,8 @@
         "type": "Integrator",
         "name": "Storage",
         "position": {
-          "x": 465,
-          "y": 1050
+          "x": 460,
+          "y": 1130
         },
         "inputs": [
           {
@@ -765,30 +767,6 @@
             "name": "in 0",
             "direction": "input",
             "index": 0,
-            "color": "#969696"
-          },
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-1",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 1",
-            "direction": "input",
-            "index": 1,
-            "color": "#969696"
-          },
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-2",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 2",
-            "direction": "input",
-            "index": 2,
-            "color": "#969696"
-          },
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-3",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 3",
-            "direction": "input",
-            "index": 3,
             "color": "#969696"
           }
         ],
@@ -2032,6 +2010,62 @@
           "_rotation": 0
         },
         "color": "#BA68C8"
+      },
+      {
+        "id": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
+        "type": "Adder",
+        "name": "Adder",
+        "position": {
+          "x": 460,
+          "y": 1050
+        },
+        "inputs": [
+          {
+            "id": "d09bc7fe-8ab8-4d90-8aff-67a19341391a-input-0",
+            "nodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
+            "name": "in 0",
+            "direction": "input",
+            "index": 0,
+            "color": "#969696"
+          },
+          {
+            "id": "d09bc7fe-8ab8-4d90-8aff-67a19341391a-input-1",
+            "nodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
+            "name": "in 1",
+            "direction": "input",
+            "index": 1,
+            "color": "#969696"
+          },
+          {
+            "id": "d09bc7fe-8ab8-4d90-8aff-67a19341391a-input-2",
+            "nodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
+            "name": "in 2",
+            "direction": "input",
+            "index": 2,
+            "color": "#969696"
+          },
+          {
+            "id": "d09bc7fe-8ab8-4d90-8aff-67a19341391a-input-3",
+            "nodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
+            "name": "in 3",
+            "direction": "input",
+            "index": 3,
+            "color": "#969696"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "d09bc7fe-8ab8-4d90-8aff-67a19341391a-output-0",
+            "nodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
+            "name": "out",
+            "direction": "output",
+            "index": 0,
+            "color": "#969696"
+          }
+        ],
+        "params": {
+          "_rotation": 1
+        }
       }
     ],
     "connections": [
@@ -2183,20 +2217,6 @@
         "targetPortIndex": 0
       },
       {
-        "id": "00eaee40-7d98-4edb-a79e-b1881784ac7e",
-        "sourceNodeId": "79cd7601-ca9b-4d28-89c6-1fc66b04c2c0",
-        "sourcePortIndex": 0,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "targetPortIndex": 1
-      },
-      {
-        "id": "3568be53-7f47-48f2-b467-4faa1c575480",
-        "sourceNodeId": "da6f76ac-3620-4aa1-9a4b-b9849ab325d1",
-        "sourcePortIndex": 1,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "targetPortIndex": 2
-      },
-      {
         "id": "bdec0514-bc5d-423b-8ee5-b0f63636084e",
         "sourceNodeId": "85e83104-9336-4297-b2af-e6e7fa4e9369",
         "sourcePortIndex": 1,
@@ -2211,24 +2231,10 @@
         "targetPortIndex": 0
       },
       {
-        "id": "f051ab2d-858c-40ec-a1e7-c92bbf65c3cf",
-        "sourceNodeId": "5f6191b1-306c-40a8-be1b-e2117a906fb9",
-        "sourcePortIndex": 0,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "targetPortIndex": 3
-      },
-      {
         "id": "1a65c4ea-5d1c-40f4-88a1-509d1bcccfba",
         "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
         "sourcePortIndex": 1,
         "targetNodeId": "7953ec42-7bdc-4f66-a84a-191cca538255",
-        "targetPortIndex": 0
-      },
-      {
-        "id": "334fcddb-8bad-401f-a5ef-67c55b7fa709",
-        "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
-        "sourcePortIndex": 0,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
         "targetPortIndex": 0
       },
       {
@@ -2573,14 +2579,49 @@
         "sourcePortIndex": 2,
         "targetNodeId": "c1ce9fc7-74f5-4592-8d0e-d154d33d0559",
         "targetPortIndex": 1
+      },
+      {
+        "id": "6b5cb550-10c5-486e-9393-7f8f1d741ce5",
+        "sourceNodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
+        "sourcePortIndex": 0,
+        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "8c3ebf51-4dde-4bb2-b231-e3f3fbb5d58d",
+        "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
+        "sourcePortIndex": 0,
+        "targetNodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "d637c530-4c69-45d0-abcb-94d1330356e4",
+        "sourceNodeId": "79cd7601-ca9b-4d28-89c6-1fc66b04c2c0",
+        "sourcePortIndex": 0,
+        "targetNodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
+        "targetPortIndex": 1
+      },
+      {
+        "id": "7cebc776-6062-4d23-9e24-ec26951e8b0f",
+        "sourceNodeId": "da6f76ac-3620-4aa1-9a4b-b9849ab325d1",
+        "sourcePortIndex": 1,
+        "targetNodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
+        "targetPortIndex": 2
+      },
+      {
+        "id": "9541b101-b53a-4b20-b69e-91835fd359e0",
+        "sourceNodeId": "5f6191b1-306c-40a8-be1b-e2117a906fb9",
+        "sourcePortIndex": 0,
+        "targetNodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
+        "targetPortIndex": 3
       }
     ],
     "annotations": [
       {
         "id": "d0334f13-9e04-47c6-9b35-549a44538162",
         "position": {
-          "x": 945,
-          "y": 345
+          "x": 900,
+          "y": 320
         },
         "content": "Blanket T out (x / tau) is in [kg / s]\n\nMultiply by 1000 / T molar mass to convert to [mol / s]",
         "width": 215,
@@ -2591,7 +2632,7 @@
         "id": "de2c1f39-9782-417c-9def-197b78111188",
         "position": {
           "x": 1950,
-          "y": 345
+          "y": 290
         },
         "content": "Shutdown & Resume events for switching BCR outputs to 0 during downtime.",
         "width": 200,
@@ -2610,7 +2651,7 @@
         "y": 420
       },
       "params": {
-        "times_evt": "[1 * 24 * 3600]",
+        "times_evt": "[2 * 24 * 3600]",
         "func_act": "act_sd"
       },
       "color": "#4DD0E1"
@@ -2624,7 +2665,7 @@
         "y": 420
       },
       "params": {
-        "times_evt": "[2 * 24 * 3600]",
+        "times_evt": "[3 * 24 * 3600]",
         "func_act": "act_su"
       },
       "color": "#4DD0E1"

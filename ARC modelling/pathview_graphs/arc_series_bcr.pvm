@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-01-21T13:37:45.776Z",
-    "modified": "2026-01-21T13:37:45.776Z",
+    "created": "2026-01-22T09:34:01.314Z",
+    "modified": "2026-01-22T09:34:01.314Z",
     "name": "arc_series_bcr"
   },
   "graph": {
@@ -749,8 +749,8 @@
         "type": "Integrator",
         "name": "Storage",
         "position": {
-          "x": 495,
-          "y": 765
+          "x": 490,
+          "y": 830
         },
         "inputs": [
           {
@@ -759,30 +759,6 @@
             "name": "in 0",
             "direction": "input",
             "index": 0,
-            "color": "#969696"
-          },
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-1",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 1",
-            "direction": "input",
-            "index": 1,
-            "color": "#969696"
-          },
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-2",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 2",
-            "direction": "input",
-            "index": 2,
-            "color": "#969696"
-          },
-          {
-            "id": "8a5d00b5-7206-4f6b-ab43-af3504a10db6-input-3",
-            "nodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-            "name": "in 3",
-            "direction": "input",
-            "index": 3,
             "color": "#969696"
           }
         ],
@@ -1430,8 +1406,8 @@
         "type": "Scope",
         "name": "BCR_eff",
         "position": {
-          "x": 1770,
-          "y": 735
+          "x": 1440,
+          "y": 890
         },
         "inputs": [
           {
@@ -1464,7 +1440,7 @@
           "_rotation": 1,
           "labels": "[\"BCR_1\",\"BCR_2\",\"BCR_3\"]"
         },
-        "color": "#F06292"
+        "color": "#FFB74D"
       },
       {
         "id": "d6e6aa87-2170-4785-8fe4-f621a5497e0b",
@@ -1797,6 +1773,62 @@
           "P_in": "P_in"
         },
         "color": "#F06292"
+      },
+      {
+        "id": "d17017ee-a1d7-4153-98c6-7f51e6525340",
+        "type": "Adder",
+        "name": "Adder",
+        "position": {
+          "x": 490,
+          "y": 760
+        },
+        "inputs": [
+          {
+            "id": "d17017ee-a1d7-4153-98c6-7f51e6525340-input-0",
+            "nodeId": "d17017ee-a1d7-4153-98c6-7f51e6525340",
+            "name": "in 0",
+            "direction": "input",
+            "index": 0,
+            "color": "#969696"
+          },
+          {
+            "id": "d17017ee-a1d7-4153-98c6-7f51e6525340-input-1",
+            "nodeId": "d17017ee-a1d7-4153-98c6-7f51e6525340",
+            "name": "in 1",
+            "direction": "input",
+            "index": 1,
+            "color": "#969696"
+          },
+          {
+            "id": "d17017ee-a1d7-4153-98c6-7f51e6525340-input-2",
+            "nodeId": "d17017ee-a1d7-4153-98c6-7f51e6525340",
+            "name": "in 2",
+            "direction": "input",
+            "index": 2,
+            "color": "#969696"
+          },
+          {
+            "id": "d17017ee-a1d7-4153-98c6-7f51e6525340-input-3",
+            "nodeId": "d17017ee-a1d7-4153-98c6-7f51e6525340",
+            "name": "in 3",
+            "direction": "input",
+            "index": 3,
+            "color": "#969696"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "d17017ee-a1d7-4153-98c6-7f51e6525340-output-0",
+            "nodeId": "d17017ee-a1d7-4153-98c6-7f51e6525340",
+            "name": "out",
+            "direction": "output",
+            "index": 0,
+            "color": "#969696"
+          }
+        ],
+        "params": {
+          "_rotation": 1
+        }
       }
     ],
     "connections": [
@@ -1948,20 +1980,6 @@
         "targetPortIndex": 0
       },
       {
-        "id": "00eaee40-7d98-4edb-a79e-b1881784ac7e",
-        "sourceNodeId": "79cd7601-ca9b-4d28-89c6-1fc66b04c2c0",
-        "sourcePortIndex": 0,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "targetPortIndex": 1
-      },
-      {
-        "id": "3568be53-7f47-48f2-b467-4faa1c575480",
-        "sourceNodeId": "da6f76ac-3620-4aa1-9a4b-b9849ab325d1",
-        "sourcePortIndex": 1,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "targetPortIndex": 2
-      },
-      {
         "id": "1a9dcf6e-a286-42d9-9070-ac754f0fb774",
         "sourceNodeId": "c39c350c-e3ce-4bbf-bb2a-cdc600481e25",
         "sourcePortIndex": 1,
@@ -2004,24 +2022,10 @@
         "targetPortIndex": 0
       },
       {
-        "id": "f051ab2d-858c-40ec-a1e7-c92bbf65c3cf",
-        "sourceNodeId": "5f6191b1-306c-40a8-be1b-e2117a906fb9",
-        "sourcePortIndex": 0,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
-        "targetPortIndex": 3
-      },
-      {
         "id": "1a65c4ea-5d1c-40f4-88a1-509d1bcccfba",
         "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
         "sourcePortIndex": 1,
         "targetNodeId": "7953ec42-7bdc-4f66-a84a-191cca538255",
-        "targetPortIndex": 0
-      },
-      {
-        "id": "334fcddb-8bad-401f-a5ef-67c55b7fa709",
-        "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
-        "sourcePortIndex": 0,
-        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
         "targetPortIndex": 0
       },
       {
@@ -2289,14 +2293,49 @@
         "sourcePortIndex": 2,
         "targetNodeId": "c1ce9fc7-74f5-4592-8d0e-d154d33d0559",
         "targetPortIndex": 2
+      },
+      {
+        "id": "3908cd92-6328-4905-8d19-f7e5973c736e",
+        "sourceNodeId": "d17017ee-a1d7-4153-98c6-7f51e6525340",
+        "sourcePortIndex": 0,
+        "targetNodeId": "8a5d00b5-7206-4f6b-ab43-af3504a10db6",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "f5c0166e-59ca-4999-9b69-18b8c13ebb2a",
+        "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
+        "sourcePortIndex": 0,
+        "targetNodeId": "d17017ee-a1d7-4153-98c6-7f51e6525340",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "403b3da0-8ce7-4a5e-b6ca-935a8cb00cce",
+        "sourceNodeId": "79cd7601-ca9b-4d28-89c6-1fc66b04c2c0",
+        "sourcePortIndex": 0,
+        "targetNodeId": "d17017ee-a1d7-4153-98c6-7f51e6525340",
+        "targetPortIndex": 1
+      },
+      {
+        "id": "5bff6f77-82ca-40db-8628-57d6d263dd58",
+        "sourceNodeId": "da6f76ac-3620-4aa1-9a4b-b9849ab325d1",
+        "sourcePortIndex": 1,
+        "targetNodeId": "d17017ee-a1d7-4153-98c6-7f51e6525340",
+        "targetPortIndex": 2
+      },
+      {
+        "id": "cc6706c5-faf1-4b8c-880c-d9dca2bf11d5",
+        "sourceNodeId": "5f6191b1-306c-40a8-be1b-e2117a906fb9",
+        "sourcePortIndex": 0,
+        "targetNodeId": "d17017ee-a1d7-4153-98c6-7f51e6525340",
+        "targetPortIndex": 3
       }
     ],
     "annotations": [
       {
         "id": "d0334f13-9e04-47c6-9b35-549a44538162",
         "position": {
-          "x": 945,
-          "y": 360
+          "x": 890,
+          "y": 340
         },
         "content": "Blanket T out (x / tau) is in [kg / s]\n\nMultiply by 1000 / T molar mass to convert to [mol / s]",
         "width": 215,
