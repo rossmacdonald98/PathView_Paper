@@ -282,7 +282,7 @@ def arc_same_as_meschini(duration):
 
     # Create results directory if it doesn't exist
     import os
-    results_dir = '/results'  
+    results_dir = '../results'  
     os.makedirs(results_dir, exist_ok=True)
 
     # Save the main data
@@ -632,7 +632,7 @@ def arc_single_bcr(duration):
 
     # Create results directory if it doesn't exist
     import os
-    results_dir = '/results'  
+    results_dir = '../results'  
     os.makedirs(results_dir, exist_ok=True)
 
     # Save the main data
@@ -1000,7 +1000,7 @@ def arc_series_bcrs(duration):
 
     # Create results directory if it doesn't exist
     import os
-    results_dir = '/results'  
+    results_dir = '../results'  
     os.makedirs(results_dir, exist_ok=True)
 
     # Save the main data
@@ -1383,7 +1383,7 @@ def arc_single_bcr_shutdown(duration):
 
     # Create results directory if it doesn't exist
     import os
-    results_dir = '../../results'  # Go up to ARC modelling folder, then into results
+    results_dir = '../results' 
     os.makedirs(results_dir, exist_ok=True)
 
     # Save the main data
@@ -1821,7 +1821,7 @@ def arc_parallel_bcrs_shutdown(duration):
 
     # Create results directory if it doesn't exist
     import os
-    results_dir = '../../results'  # Go up to ARC modelling folder, then into results
+    results_dir = '../results' 
     os.makedirs(results_dir, exist_ok=True)
 
     # Save the main data
