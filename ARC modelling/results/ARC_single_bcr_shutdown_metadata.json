@@ -1,0 +1,69 @@
+{
+  "scope_0_y_T2_in_y_T2_out": {
+    "labels": [
+      "y_T2_in",
+      "y_T2_out"
+    ],
+    "data_shape": [
+      2,
+      2317
+    ],
+    "time_length": 2317
+  },
+  "scope_1_Divertor_FW_Blanket_HX": {
+    "labels": [
+      "Divertor",
+      "FW",
+      "Blanket",
+      "HX"
+    ],
+    "data_shape": [
+      4,
+      2317
+    ],
+    "time_length": 2317
+  },
+  "scope_2_Fusion_rate": {
+    "labels": [
+      "Fusion rate"
+    ],
+    "data_shape": [
+      1,
+      2317
+    ],
+    "time_length": 2317
+  },
+  "scope_3_Storage_Pump_ISS_Cleanup_Detritiation": {
+    "labels": [
+      "Storage",
+      "Pump",
+      "ISS",
+      "Cleanup",
+      "Detritiation"
+    ],
+    "data_shape": [
+      5,
+      2317
+    ],
+    "time_length": 2317
+  },
+  "scope_4": {
+    "labels": [],
+    "data_shape": [
+      1,
+      2317
+    ],
+    "time_length": 2317
+  },
+  "scope_5_c_T_in_c_T_out": {
+    "labels": [
+      "c_T_in",
+      "c_T_out"
+    ],
+    "data_shape": [
+      2,
+      2317
+    ],
+    "time_length": 2317
+  }
+}

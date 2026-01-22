@@ -1061,11 +1061,11 @@ def arc_single_bcr_shutdown(duration):
     ### Shutdown / Startup events ###
     def act_sd(t):
         liquid_switch.select(0)
-        gas_switch.select(1)
+        gas_switch.select(0)
 
     def act_su(t):
         liquid_switch.select(1)
-        gas_switch.select(0)
+        gas_switch.select(1)
 
     # ────────────────────────────────────────────────────────────────────────────
     # BLOCKS
