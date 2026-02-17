@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-01-22T09:48:55.077Z",
-    "modified": "2026-01-22T09:48:55.077Z",
+    "created": "2026-02-17T20:49:37.095Z",
+    "modified": "2026-02-17T20:49:37.095Z",
     "name": "arc_parallel_bcr_shutdown"
   },
   "graph": {
@@ -12,8 +12,8 @@
         "type": "PulseSource",
         "name": "fusion_reaction_rate",
         "position": {
-          "x": 270,
-          "y": 180
+          "x": -280,
+          "y": -210
         },
         "inputs": [],
         "outputs": [
@@ -31,7 +31,8 @@
           "amplitude": "tritium_burn_rate",
           "duty": "AF",
           "t_rise": "pulse_duration * 0.01",
-          "t_fall": "pulse_duration * 0.01"
+          "t_fall": "pulse_duration * 0.01",
+          "_rotation": 1
         },
         "color": "#FFFFFF"
       },
@@ -40,8 +41,8 @@
         "type": "Amplifier",
         "name": "plasma to div",
         "position": {
-          "x": 600,
-          "y": 30
+          "x": 910,
+          "y": -100
         },
         "inputs": [
           {
@@ -64,7 +65,8 @@
           }
         ],
         "params": {
-          "gain": "f_p4/TBE"
+          "gain": "f_p4/TBE",
+          "_rotation": 1
         },
         "color": "#81C784"
       },
@@ -73,8 +75,8 @@
         "type": "Amplifier",
         "name": "plasma to fw",
         "position": {
-          "x": 600,
-          "y": 165
+          "x": 750,
+          "y": -100
         },
         "inputs": [
           {
@@ -97,7 +99,8 @@
           }
         ],
         "params": {
-          "gain": "f_p3/TBE"
+          "gain": "f_p3/TBE",
+          "_rotation": 1
         },
         "color": "#81C784"
       },
@@ -106,8 +109,8 @@
         "type": "Process",
         "name": "Divertor",
         "position": {
-          "x": 855,
-          "y": 90
+          "x": 940,
+          "y": 40
         },
         "inputs": [
           {
@@ -155,8 +158,8 @@
         "type": "Process",
         "name": "FW",
         "position": {
-          "x": 780,
-          "y": 225
+          "x": 800,
+          "y": 40
         },
         "inputs": [
           {
@@ -204,8 +207,8 @@
         "type": "Amplifier",
         "name": "x TBR",
         "position": {
-          "x": 600,
-          "y": 300
+          "x": 660,
+          "y": 40
         },
         "inputs": [
           {
@@ -228,7 +231,7 @@
           }
         ],
         "params": {
-          "_rotation": 0,
+          "_rotation": 1,
           "gain": "TBR"
         }
       },
@@ -237,8 +240,8 @@
         "type": "Process",
         "name": "Blanket",
         "position": {
-          "x": 840,
-          "y": 345
+          "x": 870,
+          "y": 200
         },
         "inputs": [
           {
@@ -303,8 +306,8 @@
         "type": "Process",
         "name": "T separation membrane",
         "position": {
-          "x": 600,
-          "y": 930
+          "x": 460,
+          "y": 1060
         },
         "inputs": [
           {
@@ -344,8 +347,8 @@
         "type": "Process",
         "name": "Heat exchanger",
         "position": {
-          "x": 1680,
-          "y": 240
+          "x": 1240,
+          "y": 380
         },
         "inputs": [
           {
@@ -385,8 +388,8 @@
         "type": "Amplifier",
         "name": "Injection_rate",
         "position": {
-          "x": 420,
-          "y": 915
+          "x": -80,
+          "y": -100
         },
         "inputs": [
           {
@@ -419,8 +422,8 @@
         "type": "Amplifier",
         "name": "Pumping_rate",
         "position": {
-          "x": 165,
-          "y": 915
+          "x": -280,
+          "y": -100
         },
         "inputs": [
           {
@@ -453,8 +456,8 @@
         "type": "Process",
         "name": "Pump",
         "position": {
-          "x": 150,
-          "y": 1020
+          "x": -280,
+          "y": 340
         },
         "inputs": [
           {
@@ -495,8 +498,8 @@
         "type": "Process",
         "name": "fuel cleanup",
         "position": {
-          "x": 285,
-          "y": 1185
+          "x": -260,
+          "y": 540
         },
         "inputs": [
           {
@@ -537,8 +540,8 @@
         "type": "Process",
         "name": "ISS",
         "position": {
-          "x": 375,
-          "y": 1260
+          "x": -240,
+          "y": 640
         },
         "inputs": [
           {
@@ -578,7 +581,7 @@
         ],
         "params": {
           "tau": "tau_iss",
-          "_rotation": 0
+          "_rotation": 1
         },
         "color": "#81C784"
       },
@@ -587,8 +590,8 @@
         "type": "Process",
         "name": "detritiation",
         "position": {
-          "x": 375,
-          "y": 1380
+          "x": -220,
+          "y": 840
         },
         "inputs": [
           {
@@ -619,7 +622,7 @@
           }
         ],
         "params": {
-          "_rotation": 2,
+          "_rotation": 1,
           "tau": "tau_detritiation"
         },
         "color": "#81C784"
@@ -629,8 +632,8 @@
         "type": "Scope",
         "name": "Outer Fuel Cycle",
         "position": {
-          "x": 1845,
-          "y": 1290
+          "x": 1380,
+          "y": 300
         },
         "inputs": [
           {
@@ -677,8 +680,8 @@
         "type": "Scope",
         "name": "Fusion Rate",
         "position": {
-          "x": 540,
-          "y": -60
+          "x": -40,
+          "y": -210
         },
         "inputs": [
           {
@@ -701,8 +704,8 @@
         "type": "Scope",
         "name": "Inner Fuel Cycle",
         "position": {
-          "x": 585,
-          "y": 1455
+          "x": 20,
+          "y": 1310
         },
         "inputs": [
           {
@@ -757,8 +760,8 @@
         "type": "Integrator",
         "name": "Storage",
         "position": {
-          "x": 460,
-          "y": 1130
+          "x": -80,
+          "y": 1200
         },
         "inputs": [
           {
@@ -790,8 +793,8 @@
         "type": "Splitter",
         "name": "HX Splitter",
         "position": {
-          "x": 1560,
-          "y": 165
+          "x": 1250,
+          "y": 200
         },
         "inputs": [
           {
@@ -830,7 +833,7 @@
           }
         ],
         "params": {
-          "_rotation": 2
+          "_rotation": 3
         }
       },
       {
@@ -838,8 +841,8 @@
         "type": "Splitter",
         "name": "Detrit / Storage",
         "position": {
-          "x": 570,
-          "y": 1275
+          "x": -230,
+          "y": 740
         },
         "inputs": [
           {
@@ -870,7 +873,8 @@
           }
         ],
         "params": {
-          "fractions": "[0.9 , 0.1]"
+          "fractions": "[0.9 , 0.1]",
+          "_rotation": 1
         },
         "color": "#81C784"
       },
@@ -879,8 +883,8 @@
         "type": "Splitter",
         "name": "Storage / Cleanup",
         "position": {
-          "x": 240,
-          "y": 1080
+          "x": -270,
+          "y": 440
         },
         "inputs": [
           {
@@ -911,7 +915,8 @@
           }
         ],
         "params": {
-          "fractions": "[dir_frac, 1 - dir_frac]"
+          "fractions": "[dir_frac, 1 - dir_frac]",
+          "_rotation": 1
         },
         "color": "#81C784"
       },
@@ -920,8 +925,8 @@
         "type": "Constant",
         "name": "1000 / T_mol_mass [mol / kg]",
         "position": {
-          "x": 615,
-          "y": 420
+          "x": 540,
+          "y": 200
         },
         "inputs": [],
         "outputs": [
@@ -935,7 +940,8 @@
           }
         ],
         "params": {
-          "value": "1000 / T_mol_mass"
+          "value": "1000 / T_mol_mass",
+          "_rotation": 1
         },
         "color": "#F06292"
       },
@@ -944,8 +950,8 @@
         "type": "Constant",
         "name": "Total flow L [kg/s]",
         "position": {
-          "x": 660,
-          "y": 540
+          "x": 190,
+          "y": 200
         },
         "inputs": [],
         "outputs": [
@@ -959,7 +965,8 @@
           }
         ],
         "params": {
-          "value": "total_flow_l"
+          "value": "total_flow_l",
+          "_rotation": 1
         },
         "color": "#F06292"
       },
@@ -968,8 +975,8 @@
         "type": "Constant",
         "name": "1 / rho_l [m3 / kg]",
         "position": {
-          "x": 660,
-          "y": 480
+          "x": 350,
+          "y": 200
         },
         "inputs": [],
         "outputs": [
@@ -983,7 +990,8 @@
           }
         ],
         "params": {
-          "value": "1 / rho_l"
+          "value": "1 / rho_l",
+          "_rotation": 1
         },
         "color": "#F06292"
       },
@@ -992,8 +1000,8 @@
         "type": "Multiplier",
         "name": "T_out_blanket [mol / s]",
         "position": {
-          "x": 945,
-          "y": 435
+          "x": 550,
+          "y": 300
         },
         "inputs": [
           {
@@ -1023,7 +1031,9 @@
             "color": "#969696"
           }
         ],
-        "params": {},
+        "params": {
+          "_rotation": 1
+        },
         "color": "#F06292"
       },
       {
@@ -1031,8 +1041,8 @@
         "type": "Multiplier",
         "name": "Q_l [m3 / s]",
         "position": {
-          "x": 900,
-          "y": 495
+          "x": 340,
+          "y": 300
         },
         "inputs": [
           {
@@ -1062,7 +1072,9 @@
             "color": "#969696"
           }
         ],
-        "params": {},
+        "params": {
+          "_rotation": 1
+        },
         "color": "#F06292"
       },
       {
@@ -1070,8 +1082,8 @@
         "type": "Pow",
         "name": "1 / Q_l [s / m3]",
         "position": {
-          "x": 1020,
-          "y": 495
+          "x": 340,
+          "y": 400
         },
         "inputs": [
           {
@@ -1094,7 +1106,8 @@
           }
         ],
         "params": {
-          "exponent": "-1"
+          "exponent": "-1",
+          "_rotation": 1
         },
         "color": "#F06292"
       },
@@ -1103,8 +1116,8 @@
         "type": "Multiplier",
         "name": "c_T_in [mol / m3]",
         "position": {
-          "x": 1170,
-          "y": 465
+          "x": 540,
+          "y": 480
         },
         "inputs": [
           {
@@ -1134,7 +1147,9 @@
             "color": "#969696"
           }
         ],
-        "params": {},
+        "params": {
+          "_rotation": 1
+        },
         "color": "#F06292"
       },
       {
@@ -1142,8 +1157,8 @@
         "type": "GLC",
         "name": "BCR 1",
         "position": {
-          "x": 1335,
-          "y": 495
+          "x": 780,
+          "y": 650
         },
         "inputs": [
           {
@@ -1259,8 +1274,8 @@
         "type": "Constant",
         "name": "y_T2_in",
         "position": {
-          "x": 1110,
-          "y": 675
+          "x": 700,
+          "y": 200
         },
         "inputs": [],
         "outputs": [
@@ -1274,7 +1289,8 @@
           }
         ],
         "params": {
-          "value": "0"
+          "value": "0",
+          "_rotation": 1
         },
         "color": "#F06292"
       },
@@ -1283,8 +1299,8 @@
         "type": "Constant",
         "name": "Total flow_g [mol / s]",
         "position": {
-          "x": 645,
-          "y": 720
+          "x": 20,
+          "y": 200
         },
         "inputs": [],
         "outputs": [
@@ -1298,7 +1314,8 @@
           }
         ],
         "params": {
-          "value": "total_flow_g"
+          "value": "total_flow_g",
+          "_rotation": 1
         },
         "color": "#F06292"
       },
@@ -1307,8 +1324,8 @@
         "type": "Constant",
         "name": "T_mol_mass [kg / mol]",
         "position": {
-          "x": 1605,
-          "y": 735
+          "x": 760,
+          "y": 1070
         },
         "inputs": [],
         "outputs": [
@@ -1332,8 +1349,8 @@
         "type": "Multiplier",
         "name": "n_T_out_liquid [kg / s]",
         "position": {
-          "x": 1665,
-          "y": 510
+          "x": 1110,
+          "y": 1130
         },
         "inputs": [
           {
@@ -1364,7 +1381,7 @@
           }
         ],
         "params": {
-          "_rotation": 3
+          "_rotation": 1
         },
         "color": "#F06292"
       },
@@ -1373,8 +1390,8 @@
         "type": "Multiplier",
         "name": "n_T_out_gas [kg / s]",
         "position": {
-          "x": 1320,
-          "y": 930
+          "x": 920,
+          "y": 1130
         },
         "inputs": [
           {
@@ -1405,7 +1422,7 @@
           }
         ],
         "params": {
-          "_rotation": 2
+          "_rotation": 1
         },
         "color": "#F06292"
       },
@@ -1414,8 +1431,8 @@
         "type": "Scope",
         "name": "BCR_eff",
         "position": {
-          "x": 1635,
-          "y": 450
+          "x": 1160,
+          "y": 480
         },
         "inputs": [
           {
@@ -1437,7 +1454,8 @@
         ],
         "outputs": [],
         "params": {
-          "labels": "[\"BCR_1\", \"BCR_2\"]"
+          "labels": "[\"BCR_1\", \"BCR_2\"]",
+          "_rotation": 3
         },
         "color": "#FFB74D"
       },
@@ -1446,8 +1464,8 @@
         "type": "Scope",
         "name": "c_T in / out",
         "position": {
-          "x": 1515,
-          "y": 315
+          "x": 950,
+          "y": 480
         },
         "inputs": [
           {
@@ -1477,7 +1495,8 @@
         ],
         "outputs": [],
         "params": {
-          "labels": "[\"c_T_in\",\"c_T_out_BCR_1\",\"c_T_out_BCR_2\"]"
+          "labels": "[\"c_T_in\",\"c_T_out_BCR_1\",\"c_T_out_BCR_2\"]",
+          "_rotation": 3
         },
         "color": "#FFB74D"
       },
@@ -1486,8 +1505,8 @@
         "type": "Scope",
         "name": "y_T2 out",
         "position": {
-          "x": 1545,
-          "y": 405
+          "x": 1060,
+          "y": 480
         },
         "inputs": [
           {
@@ -1509,7 +1528,7 @@
         ],
         "outputs": [],
         "params": {
-          "_rotation": 0,
+          "_rotation": 3,
           "labels": "[\"y_T2_out_BCR_1\",\"y_T2_out_BCR_2\"]"
         },
         "color": "#FFB74D"
@@ -1519,8 +1538,8 @@
         "type": "GLC",
         "name": "BCR 2",
         "position": {
-          "x": 1350,
-          "y": 675
+          "x": 780,
+          "y": 870
         },
         "inputs": [
           {
@@ -1636,8 +1655,8 @@
         "type": "Splitter",
         "name": "Liquid Splitter",
         "position": {
-          "x": 900,
-          "y": 585
+          "x": 280,
+          "y": 680
         },
         "inputs": [
           {
@@ -1677,8 +1696,8 @@
         "type": "Switch",
         "name": "Liquid In Switch 1",
         "position": {
-          "x": 1050,
-          "y": 555
+          "x": 460,
+          "y": 640
         },
         "inputs": [
           {
@@ -1719,8 +1738,8 @@
         "type": "Switch",
         "name": "Liquid In Switch 2",
         "position": {
-          "x": 1050,
-          "y": 615
+          "x": 460,
+          "y": 720
         },
         "inputs": [
           {
@@ -1761,8 +1780,8 @@
         "type": "Constant",
         "name": "1e-4",
         "position": {
-          "x": 900,
-          "y": 645
+          "x": 300,
+          "y": 750
         },
         "inputs": [],
         "outputs": [
@@ -1776,7 +1795,8 @@
           }
         ],
         "params": {
-          "value": "1e-4"
+          "value": "1e-4",
+          "_rotation": 0
         },
         "color": "#BA68C8"
       },
@@ -1785,8 +1805,8 @@
         "type": "Splitter",
         "name": "Gas Splitter",
         "position": {
-          "x": 900,
-          "y": 765
+          "x": 290,
+          "y": 860
         },
         "inputs": [
           {
@@ -1826,8 +1846,8 @@
         "type": "Switch",
         "name": "Gas In Switch 1",
         "position": {
-          "x": 1050,
-          "y": 735
+          "x": 450,
+          "y": 820
         },
         "inputs": [
           {
@@ -1868,8 +1888,8 @@
         "type": "Switch",
         "name": "Gas In Switch 2",
         "position": {
-          "x": 1050,
-          "y": 795
+          "x": 450,
+          "y": 900
         },
         "inputs": [
           {
@@ -1910,8 +1930,8 @@
         "type": "Constant",
         "name": "1e-4",
         "position": {
-          "x": 900,
-          "y": 825
+          "x": 300,
+          "y": 930
         },
         "inputs": [],
         "outputs": [
@@ -1934,8 +1954,8 @@
         "type": "Adder",
         "name": "Combine Gas",
         "position": {
-          "x": 1440,
-          "y": 870
+          "x": 910,
+          "y": 1000
         },
         "inputs": [
           {
@@ -1975,8 +1995,8 @@
         "type": "Adder",
         "name": "Combine Liquid",
         "position": {
-          "x": 1590,
-          "y": 585
+          "x": 1100,
+          "y": 1000
         },
         "inputs": [
           {
@@ -2007,7 +2027,7 @@
           }
         ],
         "params": {
-          "_rotation": 0
+          "_rotation": 1
         },
         "color": "#BA68C8"
       },
@@ -2016,8 +2036,8 @@
         "type": "Adder",
         "name": "Adder",
         "position": {
-          "x": 460,
-          "y": 1050
+          "x": -80,
+          "y": 1120
         },
         "inputs": [
           {
@@ -2043,14 +2063,6 @@
             "direction": "input",
             "index": 2,
             "color": "#969696"
-          },
-          {
-            "id": "d09bc7fe-8ab8-4d90-8aff-67a19341391a-input-3",
-            "nodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
-            "name": "in 3",
-            "direction": "input",
-            "index": 3,
-            "color": "#969696"
           }
         ],
         "outputs": [
@@ -2066,6 +2078,47 @@
         "params": {
           "_rotation": 1
         }
+      },
+      {
+        "id": "f3863c7f-5d08-4c33-97c3-69989f79e07c",
+        "type": "Adder",
+        "name": "Adder",
+        "position": {
+          "x": -330,
+          "y": 940
+        },
+        "inputs": [
+          {
+            "id": "f3863c7f-5d08-4c33-97c3-69989f79e07c-input-0",
+            "nodeId": "f3863c7f-5d08-4c33-97c3-69989f79e07c",
+            "name": "in 0",
+            "direction": "input",
+            "index": 0,
+            "color": "#969696"
+          },
+          {
+            "id": "f3863c7f-5d08-4c33-97c3-69989f79e07c-input-1",
+            "nodeId": "f3863c7f-5d08-4c33-97c3-69989f79e07c",
+            "name": "in 1",
+            "direction": "input",
+            "index": 1,
+            "color": "#969696"
+          }
+        ],
+        "outputs": [
+          {
+            "id": "f3863c7f-5d08-4c33-97c3-69989f79e07c-output-0",
+            "nodeId": "f3863c7f-5d08-4c33-97c3-69989f79e07c",
+            "name": "out",
+            "direction": "output",
+            "index": 0,
+            "color": "#969696"
+          }
+        ],
+        "params": {
+          "_rotation": 1
+        },
+        "color": "#81C784"
       }
     ],
     "connections": [
@@ -2088,7 +2141,8 @@
         "sourceNodeId": "b42c9218-29fa-4504-a664-2e7e4eb6e98f",
         "sourcePortIndex": 0,
         "targetNodeId": "bc057c16-311e-4762-8f9c-a203bc4f062d",
-        "targetPortIndex": 0
+        "targetPortIndex": 0,
+        "waypoints": []
       },
       {
         "id": "201073e1-30b8-448b-addd-55a681d540ae",
@@ -2193,21 +2247,51 @@
         "sourceNodeId": "9ee556a3-dac5-4442-b46c-73e78810105b",
         "sourcePortIndex": 0,
         "targetNodeId": "0711a18c-e933-4424-b0d2-bde595347be1",
-        "targetPortIndex": 1
+        "targetPortIndex": 1,
+        "waypoints": [
+          {
+            "id": "ce28cd29-c8a7-4618-91b4-e3b5baebfb0e",
+            "position": {
+              "x": -430,
+              "y": 1220
+            },
+            "isUserWaypoint": true
+          }
+        ]
       },
       {
         "id": "818aece0-bcb7-428f-9751-faac3c99c0af",
         "sourceNodeId": "85e83104-9336-4297-b2af-e6e7fa4e9369",
         "sourcePortIndex": 0,
         "targetNodeId": "0711a18c-e933-4424-b0d2-bde595347be1",
-        "targetPortIndex": 2
+        "targetPortIndex": 2,
+        "waypoints": [
+          {
+            "id": "d5f00ba6-3847-4ec0-a9dd-52c3a66d9143",
+            "position": {
+              "x": -390,
+              "y": 1090
+            },
+            "isUserWaypoint": true
+          }
+        ]
       },
       {
         "id": "d30f1a4e-8252-4582-ab04-7dc2e99219fc",
         "sourceNodeId": "7953ec42-7bdc-4f66-a84a-191cca538255",
         "sourcePortIndex": 0,
         "targetNodeId": "0711a18c-e933-4424-b0d2-bde595347be1",
-        "targetPortIndex": 3
+        "targetPortIndex": 3,
+        "waypoints": [
+          {
+            "id": "0080a0a4-33f5-4f50-8d8a-6f327dd38127",
+            "position": {
+              "x": -410,
+              "y": 1020
+            },
+            "isUserWaypoint": true
+          }
+        ]
       },
       {
         "id": "e6101df2-8ef8-4615-ac7d-d7636bebd1a4",
@@ -2245,53 +2329,11 @@
         "targetPortIndex": 0
       },
       {
-        "id": "11ad786e-6377-45a3-a1eb-2b8afb14f488",
-        "sourceNodeId": "16e6316c-cd4a-44cb-ba8b-8c5463ab57f1",
-        "sourcePortIndex": 1,
-        "targetNodeId": "af08c230-a1cf-4e43-8323-032502a040d5",
-        "targetPortIndex": 0
-      },
-      {
-        "id": "085c9b44-60e8-4601-aa62-9f211e1999f5",
-        "sourceNodeId": "cf08b8b9-a04d-4d7e-b7c8-a36d7f1b192e",
-        "sourcePortIndex": 0,
-        "targetNodeId": "af08c230-a1cf-4e43-8323-032502a040d5",
-        "targetPortIndex": 1
-      },
-      {
         "id": "ea9ffb72-94b9-4e36-89d8-60a52eb618ba",
         "sourceNodeId": "825a8e19-49c5-461d-a634-24c9b5515416",
         "sourcePortIndex": 0,
         "targetNodeId": "07cf7fd8-bf48-4017-bf8f-e673f8b0f01f",
         "targetPortIndex": 0
-      },
-      {
-        "id": "5087c2b6-7299-424a-a30a-3e019caa58fe",
-        "sourceNodeId": "af08c230-a1cf-4e43-8323-032502a040d5",
-        "sourcePortIndex": 0,
-        "targetNodeId": "eabfc7fd-0f67-4dd8-bb49-e1f3ef8ae54d",
-        "targetPortIndex": 0
-      },
-      {
-        "id": "6fd543e5-3511-4a25-b50f-0431982341c6",
-        "sourceNodeId": "07cf7fd8-bf48-4017-bf8f-e673f8b0f01f",
-        "sourcePortIndex": 0,
-        "targetNodeId": "eabfc7fd-0f67-4dd8-bb49-e1f3ef8ae54d",
-        "targetPortIndex": 1
-      },
-      {
-        "id": "c679f7e9-a45b-4cc8-ab0d-4ab9620d20a2",
-        "sourceNodeId": "c146c927-6b35-40e7-a2f9-68a19c887a68",
-        "sourcePortIndex": 0,
-        "targetNodeId": "825a8e19-49c5-461d-a634-24c9b5515416",
-        "targetPortIndex": 0
-      },
-      {
-        "id": "78312563-b05b-452f-9ee8-b075b4005da5",
-        "sourceNodeId": "8c588549-4225-41a2-9070-0ee382d8f446",
-        "sourcePortIndex": 0,
-        "targetNodeId": "825a8e19-49c5-461d-a634-24c9b5515416",
-        "targetPortIndex": 1
       },
       {
         "id": "fca91128-c8b2-406f-b169-be321adff3dc",
@@ -2326,27 +2368,6 @@
         "sourceNodeId": "c39c350c-e3ce-4bbf-bb2a-cdc600481e25",
         "sourcePortIndex": 0,
         "targetNodeId": "7fa8500a-5309-40cd-bfd9-27dbc3cf13e2",
-        "targetPortIndex": 3
-      },
-      {
-        "id": "9cface90-c447-40fb-ac4b-fe1d82d06acd",
-        "sourceNodeId": "9c400091-2f2c-4365-8c1d-2e8d581dc6ee",
-        "sourcePortIndex": 0,
-        "targetNodeId": "bc057c16-311e-4762-8f9c-a203bc4f062d",
-        "targetPortIndex": 1
-      },
-      {
-        "id": "622e680f-e1d3-48c6-afc2-26cee095c46b",
-        "sourceNodeId": "9c400091-2f2c-4365-8c1d-2e8d581dc6ee",
-        "sourcePortIndex": 1,
-        "targetNodeId": "f60f31b5-267c-4c50-b00c-4163b391c744",
-        "targetPortIndex": 1
-      },
-      {
-        "id": "c280be8d-f42a-4d02-99e4-68c942cead3a",
-        "sourceNodeId": "9c400091-2f2c-4365-8c1d-2e8d581dc6ee",
-        "sourcePortIndex": 2,
-        "targetNodeId": "16e6316c-cd4a-44cb-ba8b-8c5463ab57f1",
         "targetPortIndex": 3
       },
       {
@@ -2497,20 +2518,6 @@
         "targetPortIndex": 0
       },
       {
-        "id": "fa10402c-15f1-4a8c-81bb-31868e5959c0",
-        "sourceNodeId": "60ecf0fe-99a9-4a6a-9178-5fa87ac59a76",
-        "sourcePortIndex": 6,
-        "targetNodeId": "2090d190-9307-462d-92d6-66a2b7c4cbff",
-        "targetPortIndex": 0
-      },
-      {
-        "id": "951fd088-c974-4067-9439-7e5da116a590",
-        "sourceNodeId": "3eecc402-9a7c-4142-96bb-ff29c587609e",
-        "sourcePortIndex": 6,
-        "targetNodeId": "2090d190-9307-462d-92d6-66a2b7c4cbff",
-        "targetPortIndex": 1
-      },
-      {
         "id": "5c19e13c-e45b-4a8a-8e8b-e2d93b03be47",
         "sourceNodeId": "2090d190-9307-462d-92d6-66a2b7c4cbff",
         "sourcePortIndex": 0,
@@ -2588,13 +2595,6 @@
         "targetPortIndex": 0
       },
       {
-        "id": "8c3ebf51-4dde-4bb2-b231-e3f3fbb5d58d",
-        "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
-        "sourcePortIndex": 0,
-        "targetNodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
-        "targetPortIndex": 0
-      },
-      {
         "id": "d637c530-4c69-45d0-abcb-94d1330356e4",
         "sourceNodeId": "79cd7601-ca9b-4d28-89c6-1fc66b04c2c0",
         "sourcePortIndex": 0,
@@ -2609,19 +2609,120 @@
         "targetPortIndex": 2
       },
       {
-        "id": "9541b101-b53a-4b20-b69e-91835fd359e0",
+        "id": "41cca64e-f13f-4605-bdc8-020eda1215ed",
+        "sourceNodeId": "16e6316c-cd4a-44cb-ba8b-8c5463ab57f1",
+        "sourcePortIndex": 1,
+        "targetNodeId": "af08c230-a1cf-4e43-8323-032502a040d5",
+        "targetPortIndex": 1
+      },
+      {
+        "id": "5fe799f8-bf90-45fc-8e41-e8728af91ded",
+        "sourceNodeId": "cf08b8b9-a04d-4d7e-b7c8-a36d7f1b192e",
+        "sourcePortIndex": 0,
+        "targetNodeId": "af08c230-a1cf-4e43-8323-032502a040d5",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "07a1af62-6833-4c51-9745-550ef61289aa",
+        "sourceNodeId": "07cf7fd8-bf48-4017-bf8f-e673f8b0f01f",
+        "sourcePortIndex": 0,
+        "targetNodeId": "eabfc7fd-0f67-4dd8-bb49-e1f3ef8ae54d",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "9556a12b-414e-4103-b758-2902351c239b",
+        "sourceNodeId": "af08c230-a1cf-4e43-8323-032502a040d5",
+        "sourcePortIndex": 0,
+        "targetNodeId": "eabfc7fd-0f67-4dd8-bb49-e1f3ef8ae54d",
+        "targetPortIndex": 1
+      },
+      {
+        "id": "3e4e0f6e-0a06-463b-b308-e16a87ccce11",
+        "sourceNodeId": "c146c927-6b35-40e7-a2f9-68a19c887a68",
+        "sourcePortIndex": 0,
+        "targetNodeId": "825a8e19-49c5-461d-a634-24c9b5515416",
+        "targetPortIndex": 1
+      },
+      {
+        "id": "e529802b-3314-4db6-9c1d-1c78e842f7a9",
+        "sourceNodeId": "8c588549-4225-41a2-9070-0ee382d8f446",
+        "sourcePortIndex": 0,
+        "targetNodeId": "825a8e19-49c5-461d-a634-24c9b5515416",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "217a452f-daa4-4db6-b464-d09072611f71",
+        "sourceNodeId": "60ecf0fe-99a9-4a6a-9178-5fa87ac59a76",
+        "sourcePortIndex": 6,
+        "targetNodeId": "2090d190-9307-462d-92d6-66a2b7c4cbff",
+        "targetPortIndex": 1
+      },
+      {
+        "id": "77ca6812-f606-40cb-bf17-2e1b0ab6f5cd",
+        "sourceNodeId": "3eecc402-9a7c-4142-96bb-ff29c587609e",
+        "sourcePortIndex": 6,
+        "targetNodeId": "2090d190-9307-462d-92d6-66a2b7c4cbff",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "719ab604-3d12-47d5-8d9a-2b9d06ae5c18",
+        "sourceNodeId": "9c400091-2f2c-4365-8c1d-2e8d581dc6ee",
+        "sourcePortIndex": 0,
+        "targetNodeId": "16e6316c-cd4a-44cb-ba8b-8c5463ab57f1",
+        "targetPortIndex": 3
+      },
+      {
+        "id": "45924c6a-9492-4101-bad2-c8a487e295b9",
+        "sourceNodeId": "9c400091-2f2c-4365-8c1d-2e8d581dc6ee",
+        "sourcePortIndex": 1,
+        "targetNodeId": "bc057c16-311e-4762-8f9c-a203bc4f062d",
+        "targetPortIndex": 1
+      },
+      {
+        "id": "71350a66-2e6b-4677-a59a-d8c2dc6019ef",
+        "sourceNodeId": "9c400091-2f2c-4365-8c1d-2e8d581dc6ee",
+        "sourcePortIndex": 2,
+        "targetNodeId": "f60f31b5-267c-4c50-b00c-4163b391c744",
+        "targetPortIndex": 1,
+        "waypoints": [
+          {
+            "id": "b78804be-7c0a-4776-a536-23f67831fe71",
+            "position": {
+              "x": 1230,
+              "y": -20
+            },
+            "isUserWaypoint": true
+          }
+        ]
+      },
+      {
+        "id": "5b6c6edc-686c-4403-8847-eb22fcfbd569",
+        "sourceNodeId": "4cea56cc-1a96-40db-ac65-489cf15b8a80",
+        "sourcePortIndex": 0,
+        "targetNodeId": "f3863c7f-5d08-4c33-97c3-69989f79e07c",
+        "targetPortIndex": 0
+      },
+      {
+        "id": "d4d3665d-de38-4ce8-afc0-966806db74f3",
         "sourceNodeId": "5f6191b1-306c-40a8-be1b-e2117a906fb9",
         "sourcePortIndex": 0,
+        "targetNodeId": "f3863c7f-5d08-4c33-97c3-69989f79e07c",
+        "targetPortIndex": 1
+      },
+      {
+        "id": "12852f75-5011-4d09-bfe0-6443ecc20fb3",
+        "sourceNodeId": "f3863c7f-5d08-4c33-97c3-69989f79e07c",
+        "sourcePortIndex": 0,
         "targetNodeId": "d09bc7fe-8ab8-4d90-8aff-67a19341391a",
-        "targetPortIndex": 3
+        "targetPortIndex": 0
       }
     ],
     "annotations": [
       {
         "id": "d0334f13-9e04-47c6-9b35-549a44538162",
         "position": {
-          "x": 900,
-          "y": 320
+          "x": 240,
+          "y": 500
         },
         "content": "Blanket T out (x / tau) is in [kg / s]\n\nMultiply by 1000 / T molar mass to convert to [mol / s]",
         "width": 215,
@@ -2631,12 +2732,12 @@
       {
         "id": "de2c1f39-9782-417c-9def-197b78111188",
         "position": {
-          "x": 1950,
-          "y": 290
+          "x": 550,
+          "y": 1280
         },
         "content": "Shutdown & Resume events for switching BCR outputs to 0 during downtime.",
-        "width": 200,
-        "height": 100,
+        "width": 240,
+        "height": 70,
         "color": "#4DD0E1"
       }
     ]
@@ -2679,11 +2780,11 @@
     "dt": "0.02",
     "solver": "RKCK54",
     "adaptive": true,
-    "atol": "",
-    "rtol": "",
-    "ftol": "",
-    "dt_min": "",
-    "dt_max": "",
+    "atol": null,
+    "rtol": null,
+    "ftol": null,
+    "dt_min": null,
+    "dt_max": null,
     "ghostTraces": 0,
     "plotResults": true
   }
