@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
   "metadata": {
-    "created": "2026-02-17T20:49:37.095Z",
-    "modified": "2026-02-17T20:49:37.095Z",
+    "created": "2026-04-01T11:54:15.060Z",
+    "modified": "2026-04-01T11:54:15.060Z",
     "name": "arc_parallel_bcr_shutdown"
   },
   "graph": {
@@ -687,7 +687,7 @@
           {
             "id": "37197fac-7411-48bd-9ef2-88848f422246-input-0",
             "nodeId": "37197fac-7411-48bd-9ef2-88848f422246",
-            "name": "in 0",
+            "name": "Fusion rate",
             "direction": "input",
             "index": 0,
             "color": "#969696"
@@ -695,7 +695,7 @@
         ],
         "outputs": [],
         "params": {
-          "labels": "['Fusion rate'"
+          "labels": "['Fusion rate']"
         },
         "color": "#FFB74D"
       },
@@ -1729,7 +1729,7 @@
         ],
         "params": {
           "_rotation": 0,
-          "state": "1"
+          "switch_state": "1"
         },
         "color": "#BA68C8"
       },
@@ -1771,7 +1771,7 @@
         ],
         "params": {
           "_rotation": 0,
-          "state": "0"
+          "switch_state": "0"
         },
         "color": "#BA68C8"
       },
@@ -1879,7 +1879,7 @@
         ],
         "params": {
           "_rotation": 0,
-          "state": "1"
+          "switch_state": "1"
         },
         "color": "#BA68C8"
       },
@@ -1921,7 +1921,7 @@
         ],
         "params": {
           "_rotation": 0,
-          "state": "0"
+          "switch_state": "0"
         },
         "color": "#BA68C8"
       },
